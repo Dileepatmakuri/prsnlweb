@@ -1,27 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dileep's_Portfolio</title>
-</head>
-<body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="application pic.jpeg" alt="dileep's profile pic" width="200px"></td>
-            <td><h1>Dileep Atmakuri</h1>
-            <p><em>Student at GVPCE college of engineering</em></p></td>
-        </tr>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <ul>
-        <li>c++ programming</li>
-        <li>Data structures</li>
-        <li>python programming</li>
-        <li>Machine Learning</li>
-        <li>Computer Vision</li>
-        <li>web Development</li>
-    </ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dileep's Portfolio</title>
+    <link rel="stylesheet" href="css\styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./public/favicons/android-chrome-512x512.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/f6f6dc9eec.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Scroll to Top ⬆️ -->
+    <script src="./static/js/scrollToTop.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <p class="logo-text">Dileep Atmakuri</p>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li><a href="#review">Review</a></li> -->
+            <!-- <li><a href="https://nvrc.hashnode.dev/">Writes at</a></li> -->
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="row">
+          <div class="header-text">
+          
+            <h1>
+              Hi, I'm
+              <span class="name"><br />Dileep Atmakuri</span> 
+              
+            </h1>
+            <p>Tech Enthusiast</p>
+            
+          </div>
+          <div class="circular-image-container1 about-col-1">
+            <img
+              class="img007"
+              src="2.jpg" 
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------About----------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="circular-image-container about-col-1">
+            <img
+              class="img007"
+              src="2.jpg" 
+            />
+          </div>
+          <div class="about-col-2 animate-entry-1">
+            <h1 class="sub-title">About Me</h1>
+
+            <p class="p-007">
+
+            <p id ="self_info">
+
+              "Hello, I'm Dileep, a passionate problem solver with a keen interest in exploring new technologies and learning.
+               My love for coding has driven me to solve over 500 problems, and I've delved into various fields such as MySQL for DBMS,
+                OpenCV, Machine Learning, and laid the groundwork in front-end web development. Proficient in data structures and algorithms,
+                I am eager to leverage my expertise and seeking opportunities where I can contribute meaningfully.
+                I am enthusiastic about connecting and discussing how I can make valuable contributions."
+              
+            </p>
+            <div class="tab-titles">
+              <div class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </div>
+              <div class="tab-links" onclick="opentab('education')">
+                Education
+              </div>
+              <!-- <div class="tab-links" onclick="opentab('experience')">
+                Positions Served
+              </div> -->
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Languages</span><br />C, C++, Python,HTML,CSS,java Script</li>
+                <li>
+                  <span>Technologies</span><br />Machine Learning,Open CV,SQL-MYSQL
+                </li>
+                <li>
+                  <span>concepts</span><br />Data Structures,OOPS,DBMS 
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>B.tech </span><br />Gayatri Vidya Parishad College
+                  of Engineering<br />CGPA: 8.3
+                </li>
+                <li>
+                  <span>Intermediate</span><br />Narayana Jr College
+                  <br />CGPA:9.5                </li>
+                <li>
+                  <span>10th Standard</span><br />Viveka High School
+                  <br />CGPA:9.8
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Core Volunteer</span><br />Google Developer Groups, Vizag</li>
+                <li>
+                  <span>Google Cloud Facilitator</span><br />GDSC_GVP, Visakhapatnam
+                </li>
+                <li>
+                  <span>DevOps Lead</span><br />GDSC_GVP Chapter, Visakhapatnam
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------Projects----------------------------->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list animate-entry-1">
+          <div>
+            <i class="fa-solid fa-hand"></i>
+            <h2>Mouse control system by hand gestures using Open CV</h2>
+            <p class="p-007">
+                "It's a computer vision tool utilizing OpenCV to track hand movements,
+                controlling the cursor and enabling clicks. Additionally, it recognizes specific gestures,
+                allowing users to execute predefined actions."
+
+            <a
+              href="https://github.com/Dileepatmakuri/mouse-control-system-uing-hand-gestures" target="_blank"
+              ><span style="font-size: 22px;">View Project</span></a
+            ><br>
+            <a href="https://github.com/Dileepatmakuri/mouse-control-system-uing-hand-gestures" target="_blank"
+              ><span style="font-size: 22px;">View Code</span></a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-dollar-sign"></i>
+            <h2>Classifying Banking Loans and understanding credit worthiness of lenders</h2>
+            <p class="p-007">
+                "It is a machine learning model to sort banking loans and assess the trustworthiness of loan applicants.
+                 These predictive models boosted loan approval efficiency and minimized risks by employing data science 
+                 techniques."
+
+            </p>
+            <a
+              href="" target="_blank"
+              ><span style="font-size: 22px;">View Project</span></a
+            ><br>
+            <a href="" target="_blank"
+              ><span style="font-size: 22px;">View Code</span></a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-home"></i>
+            <h2>House price prediction</h2>
+            <p class="p-007">
+                "It's a straightforward machine learning tool using regression, forecasting house prices
+                 based on factors like size, location, and the number of rooms as inputs."
+
+            </p>
+            <a
+              href="" target="_blank"
+              ><span style="font-size: 22px;">View Project</span></a
+            ><br>
+            <a
+              href="" target="_blank"
+              ><span style="font-size: 22px;">View Code</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------------Contact Us-------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i><a class="email" href="mailto:satyaramatmakuri999@gmailcom.com">satyaramatmakuri999@gmail.com</a> 
+            </p>
+
+            <div class="social-icons">
+              <a href="https://www.instagram.com/dileep_atmakuri/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dileep-atmakuri/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Dileepatmakuri" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <a href="Final_resume_1-4.pdf" download class="btn btn2 "
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right animate-entry-1">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="94f68298-6683-4c19-b5ed-ec768ee51e9f">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Good Name.."
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email..."
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message..."
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <!---------------------------- Review ----------------------------------->
+      <!-- <section id="review">
+        <div class="container">
+          <h2 class="under sub-title">Review</h2>
+          <br>
+          <form action="#">
+              <h3 style="font-size: 30px;">Your reviews here:</h3>
+              <textarea id="review-section" name="review" placeholder="Write here"></textarea>
+              <button type="submit" class="submit-button btn btn2" onclick="thanking();">Submit</button>
+          </form>
+          <div id="thanks"></div>
+        </div>
+
+      </section> -->
+      <!-- My btn -->
+      <button class="back-to-top hidden-top-btn">
+        <a href="#header"><i class="fa-solid fa-arrow-up fa-xl"></i></a>
+      </button>
+      <!-- <div class="copyright">
+        <p>
+          Made with <i class="fa-solid fa-heart"></i> from India.
+        </p>
+      </div> -->
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxH5fxfqQLK9QR05D20SKhSxipraz0xHX-FsiWRiLW0UL9nRH9WckUCHoCCEKWqE7GcSg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML =
+              "ThankYou. Your Message has been sent Successfully.";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("scrolled", window.scrollY > 0);
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slideInElement = document.querySelectorAll(".animate-entry-1");
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active-animation");
+              // observer.unobserve(entry);
+            }
+          });
+        });
+        slideInElement.forEach((el) => observer.observe(el));
+      });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://raghucharan16.github.io/",
+        "@type": "Portfolio Website",
+        "name": "N.Venkata Raghu Charan",
+        "author": {
+          "@type": "Person",
+          "name": "N.Venkata Raghu Charan"
+        },
+        "datePublished": "2023-12-20",
+        "description": "Hello World!!",
+        "prepTime": "PT20M"
+      }
+    </script>
+    <script>
+      function thanking(){
+          document.getElementById("thanks").innerHTML="Thanks for your review!!";
+
+      }
+  </script>
+  </body>
 </html>
